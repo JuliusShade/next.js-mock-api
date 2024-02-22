@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# User Profiles Application
 
-## Getting Started
+This is a Next.js application that displays a list of user profiles with dynamic routing to individual user details and server actions for liking or disliking profiles.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Home Page**: Displays a list of user profiles.
+- **Dynamic Routing**: Allows users to click on a profile to view more details, utilizing Next.js's file-system-based routing.
+- **Server Actions/API Routes**: Users can "like" or "dislike" profiles through API routes which handle POST requests to update user preferences.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How to Run the Application
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To get the application up and running on your local machine, follow these steps:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repository:
 
-## Learn More
+   \```bash
+   git clone https://your-repository-url.git
+   cd your-repository-directory
+   \```
 
-To learn more about Next.js, take a look at the following resources:
+2. Install dependencies:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   \```bash
+   npm install
+   \```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   or if you're using `yarn`:
 
-## Deploy on Vercel
+   \```bash
+   yarn
+   \```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Start the development server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   \```bash
+   npm run dev
+   \```
+
+   or with `yarn`:
+
+   \```bash
+   yarn dev
+   \```
+
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Running Tests
+
+Describe how to run the automated tests for this system (if applicable).
+
+## Deployment
+
+Instructions on how to deploy the application (if applicable).
+
+## Dynamic Route Functionality
+
+The application uses Next.js's dynamic routing feature to create a unique route for each user profile. When a user clicks on a profile from the home page, they are taken to a route like `/users/{id}`, where `{id}` is the unique identifier for the selected user profile. The user's detailed information is then fetched and displayed.
+
+## Server Action/API Route Functionality
+
+The application includes API routes such as `/api/users/{id}/like` and `/api/users/{id}/dislike` to handle like and dislike actions for each user profile. When these endpoints receive a POST request, the server performs the necessary actions to record the user's preference. This could involve updating a database or storing the data in memory.
+
+---
+
+For more information on Next.js, check out the [Next.js documentation](https://nextjs.org/docs).
