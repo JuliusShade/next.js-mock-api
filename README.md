@@ -45,14 +45,6 @@ To get the application up and running on your local machine, follow these steps:
 
 4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Running Tests
-
-Describe how to run the automated tests for this system (if applicable).
-
-## Deployment
-
-Instructions on how to deploy the application (if applicable).
-
 ## Dynamic Route Functionality
 
 The application uses Next.js's dynamic routing feature to create a unique route for each user profile. When a user clicks on a profile from the home page, they are taken to a route like `/users/{id}`, where `{id}` is the unique identifier for the selected user profile. The user's detailed information is then fetched and displayed.
