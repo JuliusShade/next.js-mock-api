@@ -1,4 +1,3 @@
-// Similar to the like.ts file, but for dislikes
 import type { NextApiRequest, NextApiResponse } from "next";
 
 const updateUserDislikes = async (userId: number) => {
